@@ -1,0 +1,30 @@
+{
+  "model_name": "distilbert-sentiment-classifier",
+  "base_model": "distilbert-base-uncased",
+  "task": "text-classification",
+  "dataset": "imdb",
+  "num_labels": 2,
+  "labels": [
+    "NEGATIVE",
+    "POSITIVE"
+  ],
+  "metrics": {
+    "accuracy": 0.918,
+    "f1": 0.917,
+    "precision": 0.915,
+    "recall": 0.92,
+    "roc_auc": 0.967
+  },
+  "training_info": {
+    "epochs": 3,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "optimizer": "AdamW",
+    "scheduler": "linear",
+    "total_training_steps": 1563,
+    "warmup_steps": 0
+  },
+  "created_at": "2025-06-26T00:12:00Z",
+  "transformers_version": "4.36.0",
+  "pytorch_version": "2.1.0"
+}
